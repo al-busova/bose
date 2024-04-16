@@ -20,8 +20,11 @@
   }
 }
 .hero__left-side {
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px)  {
     max-width: 294px;
+  }
+   @media screen and (min-width: 1440px)  {
+    max-width: 50%;
   }
 }
 .hero__text {
@@ -29,7 +32,7 @@
   line-height: 1.25;
   @media screen and (min-width: 768px) {
     font-size: 16px;
-      line-height: 1.45;
+    line-height: 1.45;
   }
 }
 .hero__text:first-child {
@@ -68,6 +71,7 @@
 .hero__btn {
   padding: 19px 0;
   margin-bottom: 32px;
+  min-width: 100%;
   border: 1px solid transparent;
   background-color: $accent;
   font-weight: 400;
@@ -76,15 +80,14 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
   transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: transparent;
     border: 1px solid $accent;
     cursor: pointer;
   }
-  @media screen and (max-width: 1439px) {
-    width: 100%;
-  }
   @media screen and (min-width: 1440px) {
+     min-width: 400px;
     padding: 22px 172px;
   }
 }
